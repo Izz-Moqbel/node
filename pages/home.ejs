@@ -1,0 +1,22 @@
+
+<h1><%= title %></h1>
+<table>
+    <% for(var i=0; i<PokéMon.length; i++) {%>
+        <div class="row">
+            <% for(var j=0; j<1; j++) { %>
+              <div class="col-sm">
+                <div class="card border-danger mb-3" style="max-width: 20rem;">
+                    <div class="card-body">
+                      <h4 class="card-title"></h4>
+                        <p class="card-text"> <%= PokéMon[i].name%><br>
+                             <%= PokéMon[i].order%><br>
+                           <%= PokéMon[i].species %><br>
+                           <%= PokéMon[i].speciesURL %><br>
+                    </div>
+                </div>
+              </div>
+            <% } %>
+          </div>
+     
+    <% } %>
+</table>
